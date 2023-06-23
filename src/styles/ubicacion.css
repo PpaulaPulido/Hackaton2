@@ -1,0 +1,25 @@
+/* cÃģdigo para el CSS*/
+@import url(https://fonts.googpleapis.com/css?family=open+Sans:800italic);
+
+body{
+    font-family: "Courier New", Castellar;
+    background-color: #dfae60;;
+
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+h1, p{
+    width: 320px;
+    color:#fff;
+    text-align: center;
+}
+
+	
+iframe{
+    float: center; /* La imagen se posiciona a la izquierda */
+    margin-right: 10px;
+	top: 10px;
+	right: 5px;
+}
