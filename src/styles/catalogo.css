@@ -67,6 +67,7 @@
 }
 /* seccion carrito */
 .carrito{
+
     border: 1px solid #666;
     width: 35%;
     margin-top: 30px;
@@ -154,7 +155,7 @@
 }
 
 .carrito-total{
-    background-color: #f3f3f3;
+    background-color: #dfae60;
     padding: 30px;
 }
 .carrito-total .fila{
@@ -166,6 +167,7 @@
     margin-bottom: 10px;
 }
 .carrito-total .btn-pagar{
+    
     display: block;
     width: 100%;
     border: none;
