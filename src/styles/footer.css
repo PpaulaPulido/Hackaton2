@@ -12,17 +12,17 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
-    padding: 20px;
+    padding: 1px;
 }
 footer{
     background-color: rgba(0, 0, 0);
     color: #fff;
-    padding: 20px;
-    height: 450px;
+    padding: 15px;
+    height: 300px;
 }
 /*estilos a los iconos de las redes sociales*/
 .social-media h4{
-    font-size: 20px;
+    font-size: 15px;
     text-align: center;
     text-shadow: 1px 1px #e7c819; 
 }
@@ -41,10 +41,10 @@ footer{
 }
 /*estilos a los parrafos de la parte de Nosotros*/
 .container2 p{
-    font-size: 18px;
+    font-size: 15px;
 }
 #somos h4{ 
-    font-size: 18px;
+    font-size: 15px;
 }
 /*Estilos al acordion del despliegue*/
 .accordion {
@@ -72,7 +72,7 @@ color: #e7c819;
 position: absolute;
 top: 50%;
 right: -5px;
-font-size: 30px;
+font-size: 25px;
 transform: translateY(-50%);
 }
 /*estilos a los enlaces de productos*/
@@ -87,7 +87,7 @@ color: #f1fbff;
     text-shadow: 1px 1px #e7c819;
 }
 .social-media h4{
-    font-size: 20px;
+    font-size: 15px;
     text-align: center;
     text-shadow: 1px 1px #e7c819;
 }
