@@ -1,0 +1,173 @@
+/*footer*/
+/*Se quita los estilos que viene predeterminados*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    background-color: black;
+}
+/*estilos al container*/
+#container-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    padding: 20px;
+}
+footer{
+    background-color: rgba(0, 0, 0);
+    color: #fff;
+    padding: 20px;
+    height: 450px;
+}
+/*estilos a los iconos de las redes sociales*/
+.social-media h4{
+    font-size: 20px;
+    text-align: center;
+    text-shadow: 1px 1px #e7c819; 
+}
+.social-icons {
+    list-style: none;
+    margin-bottom: 5.4rem;
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons i {
+    font-size: 1.5rem;
+    color: #e7c819;
+    padding: .8rem 2rem;
+    
+}
+/*estilos a los parrafos de la parte de Nosotros*/
+.container2 p{
+    font-size: 18px;
+}
+#somos h4{ 
+    font-size: 18px;
+}
+/*Estilos al acordion del despliegue*/
+.accordion {
+    width: 500px;
+    color: white;
+    background-color: black;
+
+}
+/*estilos a los contenedores de adentro del acordion*/
+.accordion .container2{
+position: relative;
+margin: 10px 10px;
+}
+.accordion .label {
+position: relative;
+padding: 10px 0;
+font-size: 20px;
+color: white;
+cursor: pointer;
+
+}
+.accordion .label::before {
+content: '+';
+color: #e7c819;
+position: absolute;
+top: 50%;
+right: -5px;
+font-size: 30px;
+transform: translateY(-50%);
+}
+/*estilos a los enlaces de productos*/
+.terms a{
+text-decoration: none;
+font-size: 16px;
+color: #f1fbff;
+}
+/*estilos a los titulos h4*/
+.terms h4{
+    font-size: 20px;
+    text-shadow: 1px 1px #e7c819;
+}
+.social-media h4{
+    font-size: 20px;
+    text-align: center;
+    text-shadow: 1px 1px #e7c819;
+}
+/*estilos al contenedor de mision y vision*/
+.accordion .content{
+position: relative;
+background: black;
+height: 0;
+font-size: 15px;
+text-align: justify;
+width: 450px;
+overflow: hidden;
+transition: 0.5s;
+}
+.accordion .content2{
+position: relative;
+height: 0;
+font-size: 15px;
+text-align: justify;
+width: 450px;
+overflow: hidden;
+transition: 0.5s;
+}
+/*estilos al contenedor de nosotros*/
+.accordion .content3{
+position: relative;
+background: black;
+height: 0;
+font-size: 15px;
+text-align: justify;
+width: 450px;
+overflow: hidden;
+transition: 0.5s;
+padding: 0;
+}
+.accordion hr {
+width: 100;
+margin-left: 0;
+border: 1px solid #e7c819;
+}
+/*estilos a la imagen del contenedor de nosotros*/
+.accordion img{
+width: 500px;
+padding: 10px;
+}
+/*con este active se va a lorar que los contenedor se desplegue por medio del Javascript*/
+.active .content{
+height: 190px;
+}
+.active .content2{
+height: 250px;
+}
+.active .content3{
+height: 100vh;
+}
+/*Responsive para media pantalla*/
+@media screen and (max-width: 767px) {
+
+    .accordion {
+        width: 300px;
+    }
+    .accordion .content{
+        width: 250px; 
+    }
+    .accordion .content3{
+        width: 280px;
+    }
+    .accordion .content2{
+        width: 280px;
+    }
+    .accordion img{
+        width: 300px;
+    }
+    .active .content{
+        height: 320px;
+    }
+    .active .content2{
+        height: 300px;
+    }
+    .active .content3{
+        height: 100vh;
+      }
+}
