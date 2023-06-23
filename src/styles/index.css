@@ -1,0 +1,6 @@
+    /* Estilos para el carrusel */
+    #carouselExampleIndicators .carousel-item img {
+        height: 620px; /* Altura de 5 cm */
+        width: 820%; /* Ocupar todo el ancho de la pantalla */
+        object-fit: cover; /* Ajustar la imagen manteniendo la relación de aspecto */
+    }
