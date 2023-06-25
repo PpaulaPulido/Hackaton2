@@ -3,12 +3,16 @@
 
 body{
     font-family: "Courier New", Castellar;
-    background-color: #dfae60;;
+    background-color: #dfae60;
+    height: 500px;
+    width: 100%;
 
 }
 .container{
     display: flex;
     justify-content: center;
+    margin-top: 130px;
+    margin-bottom: 10px;
 }
 h1, p{
     width: 320px;

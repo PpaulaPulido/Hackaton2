@@ -5,124 +5,142 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> 🛠️Catalogo 🛠️</title>
     <link rel="stylesheet" href="../styles/catalogo.css">
+    <link rel="stylesheet" href="../styles/nav.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <marquee behavior="scroll" direction="left">
-        <img src="https://www.animatedimages.org/data/media/146/animated-tool-image-0190.gif" alt="Descripción de la imagen">
-     </marquee>
-    <section class="contenedor">
-        <!-- Contenedor de elementos -->
-        <div class="contenedor-items">
-            <!-- Inicio de un elemento en el contenedor.-->
-            <div class="item">
-                <!--span es un elemento de marcado utilizado para aplicar estilos o agrupar contenido en línea dentro de un documento HTML.-->
-                <!--Un elemento de texto con la clase "titulo-item" que muestra el título "Box Engasse".-->
-                <span class="titulo-item">Alicatre</span>
-                <!--Una imagen con la ruta de origen "img/boxengasse.png", un atributo alternativo vacío y la clase "img-item".-->
-                <img src="../images/imagen1.jpg" alt="" class="img-item">
-                <!--Un elemento de texto con la clase "precio-item" que muestra el precio "$15.000".-->
-                <span class="precio-item">$15.000</span>
-                <!-- Un botón con la clase "boton-item" que muestra el texto "Agregar al Carrito".-->
-                <button class="boton-item">Agregar al Carrito</button>
-            </div>
-            <div class="item">
-                <span class="titulo-item">Destornillador</span>
-                <img src="../images/imagen2.jpg" alt="" class="img-item">
-                <span class="precio-item">$25.000</span>
-                <button class="boton-item">Agregar al Carrito</button>
-            </div>
-            <div class="item">
-                <span class="titulo-item">Metro</span>
-                <img src="../images/imagen3.jpg" alt="" class="img-item">
-                <span class="precio-item">$35.000</span>
-                <button class="boton-item">Agregar al Carrito</button>
-            </div>
-            <div class="item">
-                <span class="titulo-item">Juego de Copas</span>
-                <img src="../images/imagen4.jpg" alt="" class="img-item">
-                <span class="precio-item">$18.000</span>
-                <button class="boton-item">Agregar al Carrito</button>
-            </div>
-            <div class="item">
-                <span class="titulo-item">Rodamientos</span>
-                <img src="../images/imagen5.png" alt="" class="img-item">
-                <span class="precio-item">$32.000</span>
-                <button class="boton-item">Agregar al Carrito</button>
-            </div>
-            <div class="item">
-                <span class="titulo-item">Martillo, llave</span>
-                <img src="../images/imagen6.jpg" alt="" class="img-item">
-                <span class="precio-item">$18.000</span>
-                <button class="boton-item">Agregar al Carrito</button>
-            </div>
-            <div class="item">
-                <span class="titulo-item">Juego de llaves</span>
-                <img src="../images/imagen7.jpg"alt="" class="img-item">
-                <span class="precio-item">$54.000</span>
-                <button class="boton-item">Agregar al Carrito</button>
-            </div>
-            <div class="item">
-                <span class="titulo-item">Cortadores</span>
-                <img src="../images/imagen8.jpg" alt="" class="img-item">
-                <span class="precio-item">$32.000</span>
-                <button class="boton-item">Agregar al Carrito</button>
-            </div>
-            <div class="item">
-                <span class="titulo-item">Combo basico</span>
-                <img src="../images/imagen9.jpg" alt="" class="img-item">
-                <span class="precio-item">$42.800</span>
-                <button class="boton-item">Agregar al Carrito</button>
-            </div>
-            <div class="item">
-                <span class="titulo-item">llave de presion</span>
-                <img src="../images/imagen10.jpg" alt="" class="img-item">
-                <span class="precio-item">$42.800</span>
-                <button class="boton-item">Agregar al Carrito</button>
-            </div>
-            <div class="item">
-                <span class="titulo-item">Armario</span>
-                <img src="../images/imagen11.jpg" alt="" class="img-item">
-                <span class="precio-item">$42.800</span>
-                <button class="boton-item">Agregar al Carrito</button>
-            </div>
-            <div class="item">
-                <span class="titulo-item">Porta Herramientas</span>
-                <img src="../images/imagen12.jpg" alt="" class="img-item">
-                <span class="precio-item">$42.800</span>
-                <button class="boton-item">Agregar al Carrito</button>
-            </div>
-        </div>
-        <!-- Carrito de Compras -->
-        <div class="carrito" id="carrito">
-            <div class="header-carrito">
-                <h2>Tu Carrito</h2>
-            </div>
-
-            <div class="carrito-items"> 
-            </div>
-            <div class="carrito-total">
-                <div class="fila">
-                    <strong>Tu Total</strong>
-                    <span class="carrito-precio-total">
-                        $120.000,00
-                    </span>
+    <header class="header">
+        <!--logo de la pagina-->
+        <a href="#" class="logo">
+           <img src="https://www.zarla.com/images/zarla-divina-obra-1x1-2400x2400-20220112-f39mrwdv3dw87cw8jgp8.png?crop=1:1,smart&width=250&dpr=2"
+           width="60px" height="100px"   alt="">
+    
+        </a>
+        <!--Barra de navegación-->
+        <nav class="navbar">
+            <a href="../index.html">Inicio</a>
+            <a href="#infor">Nosotros</a>
+            <a href="./catalogo.html">Catalogo</a>
+            <a href="./ubicacion.html">Ubicacion</a>
+        </nav>
+    </header>
+    <div class="caja">
+        <marquee behavior="scroll" direction="left">
+            <img src="https://www.animatedimages.org/data/media/146/animated-tool-image-0190.gif" alt="Descripción de la imagen">
+        </marquee>
+        <section class="contenedor">
+            <!-- Contenedor de elementos -->
+            <div class="contenedor-items">
+                <!-- Inicio de un elemento en el contenedor.-->
+                <div class="item">
+                    <!--span es un elemento de marcado utilizado para aplicar estilos o agrupar contenido en línea dentro de un documento HTML.-->
+                    <!--Un elemento de texto con la clase "titulo-item" que muestra el título "Box Engasse".-->
+                    <span class="titulo-item">Alicatre</span>
+                    <!--Una imagen con la ruta de origen "img/boxengasse.png", un atributo alternativo vacío y la clase "img-item".-->
+                    <img src="../images/imagen1.jpg" alt="" class="img-item">
+                    <!--Un elemento de texto con la clase "precio-item" que muestra el precio "$15.000".-->
+                    <span class="precio-item">$15.000</span>
+                    <!-- Un botón con la clase "boton-item" que muestra el texto "Agregar al Carrito".-->
+                    <button class="boton-item">Agregar al Carrito</button>
                 </div>
-                <button class="btn-pagar">Pagar <i class="fa-solid fa-bag-shopping"></i> </button>
+                <div class="item">
+                    <span class="titulo-item">Destornillador</span>
+                    <img src="../images/imagen2.jpg" alt="" class="img-item">
+                    <span class="precio-item">$25.000</span>
+                    <button class="boton-item">Agregar al Carrito</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Metro</span>
+                    <img src="../images/imagen3.jpg" alt="" class="img-item">
+                    <span class="precio-item">$35.000</span>
+                    <button class="boton-item">Agregar al Carrito</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Juego de Copas</span>
+                    <img src="../images/imagen4.jpg" alt="" class="img-item">
+                    <span class="precio-item">$18.000</span>
+                    <button class="boton-item">Agregar al Carrito</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Rodamientos</span>
+                    <img src="../images/imagen5.png" alt="" class="img-item">
+                    <span class="precio-item">$32.000</span>
+                    <button class="boton-item">Agregar al Carrito</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Martillo, llave</span>
+                    <img src="../images/imagen6.jpg" alt="" class="img-item">
+                    <span class="precio-item">$18.000</span>
+                    <button class="boton-item">Agregar al Carrito</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Juego de llaves</span>
+                    <img src="../images/imagen7.jpg"alt="" class="img-item">
+                    <span class="precio-item">$54.000</span>
+                    <button class="boton-item">Agregar al Carrito</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Cortadores</span>
+                    <img src="../images/imagen8.jpg" alt="" class="img-item">
+                    <span class="precio-item">$32.000</span>
+                    <button class="boton-item">Agregar al Carrito</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Combo basico</span>
+                    <img src="../images/imagen9.jpg" alt="" class="img-item">
+                    <span class="precio-item">$42.800</span>
+                    <button class="boton-item">Agregar al Carrito</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">llave de presion</span>
+                    <img src="../images/imagen10.jpg" alt="" class="img-item">
+                    <span class="precio-item">$42.800</span>
+                    <button class="boton-item">Agregar al Carrito</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Armario</span>
+                    <img src="../images/imagen11.jpg" alt="" class="img-item">
+                    <span class="precio-item">$42.800</span>
+                    <button class="boton-item">Agregar al Carrito</button>
+                </div>
+                <div class="item">
+                    <span class="titulo-item">Porta Herramientas</span>
+                    <img src="../images/imagen12.jpg" alt="" class="img-item">
+                    <span class="precio-item">$42.800</span>
+                    <button class="boton-item">Agregar al Carrito</button>
+                </div>
             </div>
-        </div>
-    </section>
-    <marquee behavior="scroll" direction="left">
-        <img src="https://www.animatedimages.org/data/media/146/animated-tool-image-0062.gif" alt="Descripción de la imagen">
-        <img src="https://www.animatedimages.org/data/media/146/animated-tool-image-0233.gif" alt="Descripción de la imagen">
-        <img src="https://www.animatedimages.org/data/media/146/animated-tool-image-0123.gif" alt="Descripción de la imagen">
-        <img src="https://www.animatedimages.org/data/media/146/animated-tool-image-0270.gif" alt="Descripción de la imagen">
-        <img src="https://www.animatedimages.org/data/media/146/animated-tool-image-0032.gif" alt="Descripción de la imagen">
-        <img src="https://www.animatedimages.org/data/media/146/animated-tool-image-0071.gif" alt="Descripción de la imagen">
-        <img src="https://www.animatedimages.org/data/media/146/animated-tool-image-0042.gif" alt="Descripción de la imagen">
-        <img src="https://www.animatedimages.org/data/media/146/animated-tool-image-0048.gif" alt="Descripción de la imagen">
-    </marquee>
-    <footer>
+            <!-- Carrito de Compras -->
+            <div class="carrito" id="carrito">
+                <div class="header-carrito">
+                    <h2>Tu Carrito</h2>
+                </div>
+
+                <div class="carrito-items"> 
+                </div>
+                <div class="carrito-total">
+                    <div class="fila">
+                        <strong>Tu Total</strong>
+                        <span class="carrito-precio-total">
+                            $120.000,00
+                        </span>
+                    </div>
+                    <button class="btn-pagar">Pagar <i class="fa-solid fa-bag-shopping"></i> </button>
+                </div>
+            </div>
+        </section>
+        <marquee behavior="scroll" direction="left">
+            <img src="https://www.animatedimages.org/data/media/146/animated-tool-image-0062.gif" alt="Descripción de la imagen">
+            <img src="https://www.animatedimages.org/data/media/146/animated-tool-image-0233.gif" alt="Descripción de la imagen">
+            <img src="https://www.animatedimages.org/data/media/146/animated-tool-image-0123.gif" alt="Descripción de la imagen">
+            <img src="https://www.animatedimages.org/data/media/146/animated-tool-image-0270.gif" alt="Descripción de la imagen">
+            <img src="https://www.animatedimages.org/data/media/146/animated-tool-image-0032.gif" alt="Descripción de la imagen">
+            <img src="https://www.animatedimages.org/data/media/146/animated-tool-image-0071.gif" alt="Descripción de la imagen">
+            <img src="https://www.animatedimages.org/data/media/146/animated-tool-image-0042.gif" alt="Descripción de la imagen">
+            <img src="https://www.animatedimages.org/data/media/146/animated-tool-image-0048.gif" alt="Descripción de la imagen">
+        </marquee>
+    </div>
+    <footer id="infor">
         <object data="./footer.html" width="100%" height="350px"></object>
       </footer>
     <script src="../script/catalogo.js"></script>
